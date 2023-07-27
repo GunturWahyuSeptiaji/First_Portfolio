@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    top: 0;
+    display: flex;
+    position: sticky;
+    border-bottom: 2px solid black;
+    z-index: 9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    padding: 0px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #222;
+    font-size: 40px;
+    float: left;
+    line-height: 80px;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu {
+    float: right;
+    line-height: 80px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    color: #222;
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+section {
+    display: flex;
+    margin: auto;
+}
+
+img {
+    width: 500px;
+}
+
+.tulisan {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-family: 'comic sans-ms';
+
+}
+
+p {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.tengah {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.gambar {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.gambar img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.list-img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.list-img img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#service {
+    width: 100%;
+    background-color: #dedede;
+    padding: 50px 0;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.terakhir {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .logo a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+    }
+
+    div.tengah {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list .gambar{
+        margin: 0 auto;
+    }
+    .list .gambar img{
+        align-self: center;
+        width: 80%;
+    }
+
+    .list .list-img img{
+        width: 75%;
+    }
+
+    .container footer .terakhir {
+        width: 50%;
+    }
+
+}
